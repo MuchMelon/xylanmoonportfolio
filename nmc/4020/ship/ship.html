@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaceship!</title>
+ <link rel="stylesheet" href="ship.css">
+</head>
+
+<body>
+   
+    <div id="ship">
+        <div id="shipLight"></div>
+    </div>
+
+    <button onclick="changeDirection(-40)">Go Left</button>
+    <button onclick="changeDirection(40)">Go Right</button>
+    <button onclick="rotate(100)">Rotate</button>
+</body>
+</html>
+<script>
+    let ship = document.querySelector('#ship');
+    let shipLight = document.querySelector('#shipLight');
+    let rotateMe = 30;
+    let howFar = 0;
+    let light = 0;
+    let directionShift = 30;
+    let y = ship.style.translate;
+
+    setInterval(function() {
+
+        howFar += directionShift;
+        keepOnScreen();
+        changeShipLight();
+        ship.style.left = howFar+"px";
+        
+    }, 10);
+
+    function changeDirection(num) {
+        directionShift += num;
+    }
+    
+    function rotate(num) {
+        rotateMe += num;
+        ship.style.translate = "rotate(" +rotateMe +"deg)";
+    }
+
+    function keepOnScreen() {
+        if(howFar> window.innerWidth) {
+            howFar = 0;
+        }
+        if(howFar < 0) {
+            howFar = window.innerWidth;
+        }
+
+        
+
+    }
+
+    function changeShipLight() {
+        light++;
+        if(light <= 25){
+            shipLight.style.backgroundColor = 'red';
+        } else if (light > 25 && light <= 50){
+            shipLight.style.backgroundColor = 'black';
+        } else {
+            light = 0;
+        }
+    }
+
+    
+
+   
+   
+</script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements Practice</title>
+    <style>
+        h1::first-line {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        header::first-letter {
+            font-size: 44px;
+        }
+
+        header::first-line {
+            color: rgb(255, 155,225);
+        }
+
+        
+
+        p {
+            background-color: greenyellow;
+            border-left: 10px solid black;
+            border-top: 10px solid black;
+            border-radius: 10px;
+            background-clip: border-box;
+            padding: auto;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo Elements</h1>
+    <header>It was the best of times, <br>it was the worst of times</br></header>
+
+
+    <p>Example one of border, padding, etc.</p>
+
+</body>
+</html>

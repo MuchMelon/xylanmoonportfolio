@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Imprima";
+    src: url(../Fonts/Imprima-Regular.ttf);
+}
+
+* {
+    font-family:"Imprima";
+}
+
+body {
+    background-color: #fff4df;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+ul {
+    list-style-type: square;
+}

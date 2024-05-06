@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Cat Stuff</title>
+</head>
+
+<body>
+    <div id="app" style="display: flex; flex-flow: row wrap;">
+        <div v-for ="eachCat in catArray" style="border-style: solid; height:45vh; width: 75vw; display: flex; margin:auto; margin-top: 20px; gap:25%;">
+            <div style="display: flex;flex-flow: column wrap; gap: 0px; height: 100%; width: auto; align-content: flex-start;">
+                <h1 style="margin: auto; padding-right: 100%;">{{eachCat.name}}</h1>
+                <img :src="imageURL+eachCat.reference_image_id+endURL" style="height:80%; width: 30vw;">
+            </div>
+            <div>
+                <h3>Place of Origin</h3>
+                {{eachCat.origin}}
+                <h3>Lifespan</h3>
+                <p>{{eachCat.life_span}}</p>
+            </div>
+                
+            
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="kitty.js"></script>

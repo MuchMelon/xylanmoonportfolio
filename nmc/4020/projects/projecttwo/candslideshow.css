@@ -1,0 +1,20 @@
+#buttonwrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content:center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+#slideshowwrapper {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.set {
+    display: flex;
+    column-gap: 5px;
+    
+}

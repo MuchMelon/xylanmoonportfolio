@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>not/ify</title>
+    <link rel="icon" type="image/x-icon" href="icons/Group 4.png">
+    <link rel="stylesheet" href="musicplayer.css">
+    
+</head>
+<body>
+    
+    <div id = "homewrapper">
+        <div id = "sidebar">
+            <h1 id = "notify"><img src="icons/Group 4.png">    not/Ify</h1>
+            <h2 id = "songlist">aloha</h2>
+            <div id ="songimage"></div>
+            <h1 id = "songtitle">Hello World</h1>
+            <h3 id = "authorname">Marco Polo</h3>
+            <div id = "songprogressborder">
+                <div id = "songprogress"></div>
+            </div>
+            <h3 id = "time">hello</h3>
+        </div>
+        <div id = "homesong"> 
+            <div id="rhythmblues" onclick="setAudio(rbsongs,'R&B');" style="cursor: pointer"><div><h1>R&B</h1></div></div>
+            <div id="punk" onclick="setAudio(punk, 'Punk');" style="cursor: pointer"><div><h1>Punk</h1></div></div>
+            <div id="upbeat" onclick="setAudio(upbeat,'Upbeat');" style="cursor: pointer"><div><h1>Upbeat</h1></div></div>
+            <div id="musical" onclick="setAudio(musicals, 'Musical');" style="cursor: pointer"><div><h1>Musical</h1></div></div>
+            <div id ="soul" onclick="setAudio(soulsongs, 'Soul');" style="cursor: pointer"><div><h1>Soul</h1></div></div>
+            <div id="heartbreak" onclick="setAudio(hbsongs, 'Heartbreak');" style="cursor: pointer"><div><h1>Heartbreak</h1></div></div>
+        </div>
+        
+        
+        
+        <div id = "songbar">
+            
+            <!--<button onclick="reset()">Reset</button> -->
+            <button onclick="rewindBack()"><img src="icons/Group 3-2.svg" alt="" style="transform: scaleX(-1);"></button>
+            <button onclick="player()"><img src="icons/Play.png" alt=""></button>
+            <button onclick="skipForward()"><img src="icons/Group 3-2.svg" alt=""></button>
+            <button onclick="shuffleAll()"><img src="icons/Group 3-2.svg" alt=""></button>
+            
+        </div>
+        
+    </div>
+
+    <div id="juke">
+    </div>
+</body>
+</html>
+
+<script src="musicplayer.js">
+</script>

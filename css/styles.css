@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Imprima";
+    src: url(../Fonts/Imprima-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Kadwa-Bold";
+    src: url(../Fonts/Kadwa-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inika";
+    src: url(../Fonts/Inika-Regular.ttf);
+}
+
+* {
+    font-family:"Imprima";
+}
+
+
+
+header {
+    padding-bottom: 0%;
+
+}
+
+.logo {
+    padding-left: 20px;
+    padding-top: 0px;
+
+}
+
+.div1 {
+    display: flex;
+    flex-direction: row;
+    align-items:top;
+    column-gap: 50px;
+    margin-top: 0;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    margin-left: auto;
+
+}
+
+h1 {
+    font-family: "Inika";
+}
+
+h2 {
+    
+    font-size: 96px; 
+}
+
+.center-content {
+    text-align: center;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    
+}
+
+p {
+        font-family:"Kadwa-Bold";
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a :link {
+    text-decoration: none;
+    color: black;
+}
+
+a :visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.intro-box {
+    padding-top: 90px;
+    
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroid Landing Sites</title>
+</head>
+<script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<body>
+    
+</body>
+</html>
+<script>
+    let documentBody = document.querySelector('body');
+    let count = 0;
+    $( document ).ready(function() {
+        $.getJSON('https://data.nasa.gov/resource/y77d-th95.json', function(data) {
+
+            for (let i = 0; i < data.length; i++) {
+                count = i;
+            }
+            
+            documentBody.innerHTML += "<h1> There are: " + count +" asteroids.</1h>";
+            for (let i = 0; i < data.length; i++) {
+                var name = data[i].name;
+                var location = data[i].geolocation.coordinates;
+              
+                documentBody.innerHTML +="<h2>" +name+ "</h2>";
+                documentBody.innerHTML +="<p>" +location+ "</p>";
+                console.log(name);
+            }
+            
+            
+        });
+    });
+</script>

@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+h2 {
+    margin: auto;
+}
+p {
+    margin: auto;
+    
+}
+
+#classbox{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+#classbox > div {
+    border-radius: 5px;
+    display: flex;
+    font-size: 0.5rem;
+    word-wrap: break-word;
+    text-wrap: wrap;
+    width: 10vw;
+    justify-content: center;
+    flex-flow: column;
+    border-style: solid;
+
+
+}
+
+img {
+    height: 20vh;
+    width: 8vw;
+    border-style: solid;
+    border-color: black;
+    margin: auto;
+}

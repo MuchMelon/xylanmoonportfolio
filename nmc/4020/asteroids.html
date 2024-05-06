@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div { 
+            background-color: black;
+        border-radius: 50%;
+        float: left;
+        margin: 10px;
+    } 
+    #minimum {
+        background-color: gray;
+        margin-top: 55%;
+        margin-left: 27%;
+
+    }
+    </style>
+    <title>Asteroids</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<body>
+    <div id = "count"></div>
+    <div id="astlist"></div>
+    <div id="showdata"></div>
+    <p id="count"></p>
+</body>
+</html>
+
+<script>
+    let asteroidDisplay = document.querySelector('body');
+    let divBackground = document.querySelector('div');
+    $( document ).ready(function() {  
+        $.getJSON('https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=JjszsAmzbHckjfOqqum5eHlgWFvSUd659UJCWOg1', function(data) {
+            var howMany = data.near_earth_objects.length;
+            let dataSource = data.near_earth_objects;
+            for(let i = 0; i <dataSource.length; i++) {
+                let maxWidth = (dataSource[i].estimated_diameter.kilometers.estimated_diameter_max)*10;
+                let minWidth = (dataSource[i].estimated_diameter.kilometers.estimated_diameter_min)*10;
+                if (dataSource[i].is_potentially_hazardous_asteroid == true) {
+                    divBackground.style.backgroundColor = 'red';
+                    asteroidDisplay.innerHTML+= "<div style='width:"+maxWidth+"px;height:"+maxWidth+"px;background-color: red;'>" + "<div id = 'minimum'style='width:"+minWidth+"px;height:"+minWidth+"px'></div>" + "</div>";
+                } 
+                else {
+                    asteroidDisplay.innerHTML+= "<div style='width:"+maxWidth+"px;height:"+maxWidth+"px'>" + "<div id = 'minimum'style='width:"+minWidth+"px;height:"+minWidth+"px'></div>" + "</div>";
+                }                
+            }
+        } );
+    });
+
+</script>

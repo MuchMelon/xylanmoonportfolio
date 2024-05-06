@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Imprima";
+    src: url(../Fonts/Imprima-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Kadwa-Bold";
+    src: url(../Fonts/Kadwa-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inika";
+    src: url(../Fonts/Inika-Regular.ttf);
+}
+
+* {
+    font-family:"Imprima";
+    font-size: 10px;
+}
+
+
+
+body {
+    background-color: #FFF4DF;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 3px blueviolet;
+}
+
+h2 {
+    font-size: 3.5rem;
+    white-space: pre-wrap;
+}
+
+
+h3 {
+    font-size: 2.75rem;
+    white-space: pre-wrap;
+} 
+
+p {
+    text-align: right;
+    white-space: pre-line;
+    font-size: 2rem;
+    line-height: 2;
+}
+
+a {
+    font-size: 2.75rem;
+}

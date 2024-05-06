@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Corona</title>
+    <style>
+        
+    @font-face {
+        font-family: "Imprima";
+        src: url(/fonts/Imprima-Regular.ttf);
+    }
+
+    @font-face {
+    font-family: "Kadwa-Bold";
+    src: url(../Fonts/Kadwa-Regular.ttf);
+    }
+
+    @font-face {
+    font-family: "Inika";
+    src: url(/fonts/Inika-Regular.ttf);
+    }
+
+    * {
+        font-family: 'Inika';
+    }
+
+        #articlebox {
+            margin-left: 10vw;
+            margin-right: 10vw;
+            font-family: 'Inika';
+        }
+        #articlebox > *{
+            display: flex;
+            flex-direction: column;
+            flex-wrap:nowrap;
+        }
+        #articlebox > div {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+        }
+
+        #articlebox > * > img {
+            align-self:flex-start;
+            object-position: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id = "articlebox"></div>
+    
+</body>
+</html>
+<script src="corona.js"></script>

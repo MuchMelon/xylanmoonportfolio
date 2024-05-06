@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H_ngM_n</title>
+    <link rel = "stylesheet" href="css/hngmn.css">
+    <link rel="icon" type="" href="./Property 1=Variant4.svg">
+    <script src="https://random-word-api.herokuapp.com/word"></script> 
+</head>
+<body>
+    <h1>H_ngM_n</h1>
+    
+    <!--Test comment-->
+    <div id="wrapper">
+
+        <div id="wordwrapper">
+
+            <div id="display">
+                <div id= "uletterdisplay">
+                    <h2>Used Letters</h2>
+                    <div id = "usedwords">            
+                    </div>
+                </div>
+                <div id="clock">
+                    <div id = "time">
+                        
+                    </div>
+                    <img id = "clockimg"src="./Property 1=Variant4.svg">
+                    
+                </div>
+                <div>
+                    <h2>Words Correct</h2>
+                    <div id = "correctwords">            
+                    </div>
+                </div>
+            </div>
+            
+            <div id = "worddisplay">
+                <form id = "wordletters">
+                </form>
+             </div>
+        </div>
+        
+        <form id="form"onsubmit="return false;">
+                <input type="text" id="wordchoice" name="wordchoice" maxlength = "1"submit="checkWord(); return false;" autofocus="autofocus"><br>
+                <button id ="checkword" onclick="checkInput()">Check</button>
+        </form>
+
+            
+            
+
+    </div>
+    
+    
+   
+    
+</body>
+</html>
+<script src="js/hngmn.js"></script>

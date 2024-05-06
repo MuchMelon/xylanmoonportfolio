@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Imprima";
+    src: url(../Fonts/Imprima-Regular.ttf);
+}
+
+* {
+    font-family:"Imprima";
+    font-size: 10px;
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+#inputFields {
+    height: 50vh;
+    display: flex;
+    gap: 4px;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#buttons {
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    flex-flow: row ;
+    align-items:center;
+    justify-content:center;
+    gap: 8px;
+}
+
+button {
+    font-size: 5rem;
+    height: 12vh;
+    width: 15vw;
+    border-style: solid;
+    border-radius: 10%;
+    background-color: antiquewhite;
+}
+
+h6 {
+    margin: auto;
+    font-weight: lighter;
+}
+
+input {
+    border-style: solid;
+    font-size:12rem;
+    text-align: center;
+    width: 40rem;
+    height: 20rem;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
